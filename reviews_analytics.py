@@ -23,3 +23,13 @@ print('一共有', len(new), '筆長度小於100的留言')
 print(new[0])
 print(new[1])
 
+good = []
+for d in data:
+	if 'good' in d:
+		good.append(d)
+print('總共有', len(good), '筆留言提到good')
+
+num = input('我要查詢含有good留言中的第: ')
+num = int(num)
+print('第一筆有good的留言為: ', good[num-1])
+print(good[0])
